@@ -35,7 +35,7 @@ public class BookController {
 
     }
     @PutMapping("/{id}")
-    @Operation(summary = "Update an existing book")
+    @Operation(summary = "Update an existing book hola")
     public Book updateBook(@PathVariable Long id, @RequestBody Book book) {
         Book existingBook = bookService.getBookById(id);
         if (existingBook != null) {
